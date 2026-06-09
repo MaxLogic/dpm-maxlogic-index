@@ -1,6 +1,6 @@
 packageKind: git
 metadata:
-  id: Jcl
+  id: ProjectJedi.Jcl
   version: 0.0.1
   description: JEDI Code Library runtime package.
   authors:
