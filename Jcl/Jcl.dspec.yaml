@@ -1,0 +1,40 @@
+packageKind: git
+metadata:
+  id: Jcl
+  version: 0.0.1
+  description: JEDI Code Library runtime package.
+  authors:
+    - Project JEDI
+  projectUrl: https://github.com/project-jedi/jcl
+  repositoryUrl: https://github.com/project-jedi/jcl.git
+  repositoryType: git
+  repositoryBranch: master
+  license: MPL-1.1
+  tags:
+    - JEDI
+    - JCL
+    - Delphi
+    - runtime
+  frameworks:
+    - VCL
+targetPlatforms:
+  - compiler: 12.0
+    platforms: [Win32, Win64]
+    template: default
+templates:
+  - name: default
+    source:
+      - src: .\jcl\source\common\*.pas
+      - src: .\jcl\source\common\*.inc
+      - src: .\jcl\source\common\*.res
+      - src: .\jcl\source\include\*.inc
+      - src: .\jcl\source\windows\*.pas
+      - src: .\jcl\source\windows\*.inc
+      - src: .\jcl\source\windows\*.res
+      - src: .\jcl\packages\d29\Jcl.dpk
+      - src: .\jcl\packages\d29\Jcl.dproj
+      - src: .\jcl\packages\d29\Jcl.res
+    build:
+      - project: .\jcl\packages\d29\Jcl.dproj
+    environmentVariables:
+      PATH: $packageDir$\bpl\Win32
