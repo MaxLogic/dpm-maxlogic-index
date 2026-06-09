@@ -6,9 +6,9 @@ metadata:
   authors:
     - Project JEDI
   projectUrl: https://github.com/project-jedi/jcl
-  repositoryUrl: https://github.com/project-jedi/jcl.git
+  repositoryUrl: https://github.com/MaxLogic/jcl.git
   repositoryType: git
-  repositoryBranch: master
+  repositoryBranch: dpm-delphi12
   license: MPL-1.1
   tags:
     - JEDI
